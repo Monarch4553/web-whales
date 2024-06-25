@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden !important;
+  /* changing the background of whole document to black */
+}
+html {
+  scroll-behavior: smooth;
+}
