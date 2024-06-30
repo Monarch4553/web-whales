@@ -5,7 +5,7 @@ const TeamData =  [
       image:'/monarch.png'
     },
     {
-      name: "Shitiz G.",
+      name: "Shitiz Gupta",
       designations: ["App Developer", "Mobile Architect"],
       image:'/shitiz.png'
     },
@@ -15,7 +15,7 @@ const TeamData =  [
       image:'/luna.png'
     },
     {
-      name: "maanu Kushwaha",
+      name: "Maanu Kushwaha",
       designations: ["Head of Marketing", "Brand Manager"],
       image:'/mannu.png'
     },

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SectionTitle({ title, heading }) {
   return (
-    <Flex gap={4} flexDir={"column"} w={"500px"}>
+    <Flex gap={4} flexDir={"column"} maxW={"500px"}>
       <Heading fontSize={'28px'} as={"h3"} color={Theme.primaryColor}>
         /
         <Heading ml={2} fontSize={'24px'} as={"span"} color={"gray.400"}>

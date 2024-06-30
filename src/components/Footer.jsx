@@ -7,12 +7,12 @@ import {
   Heading,
   Text,
   Button,
-  VisuallyHidden,
+  VisuallyHidden,Image
 } from "@chakra-ui/react";
 import React from "react";
 import CustomNavLink from "./CustomNavLink";
 import NavLinks from "@/static/NavLinks";
-import Image from "next/image";
+ 
 import CopyToClipBoard from "./CopyToClipBoard";
 import { FaCopy, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
@@ -48,63 +48,53 @@ export default function Footer() {
       <Container maxW={"7xl"}>
         <Flex
           py={10}
-          px={8}
+           gap={4}
           justifyContent={"space-between"}
           alignItems={"center"}
+          flexDirection={{ base: "column", md: "row" }}
+          textAlign={{ base: "center", md: "left" }}
         >
-          <Flex alignItems={"center"} gap={6} w={"50%"}>
+          <Flex alignItems={"center"} gap={6} w={{ base: "100%", md: "50%" }}>
             <Image
               style={{ borderRadius: "50%" }}
-              height={40}
+              
               alt="Company Logo in footer"
-              width={"130"}
+              width={{base:'100px'}}
               src={"/trademark.webp"}
             />
 
             <Flex flexDir={"column"}>
-              <Heading fontSize={"40px"} color={Theme.primaryColor}>
+              <Heading
+                fontSize={{ base: "30px", md: "40px" }}
+                color={Theme.primaryColor}
+              >
                 WebWhales
               </Heading>
-              <Heading fontSize={"22px"} as={"h4"} color={"gray.400"}>
+              <Heading
+                fontSize={{ base: "18px", md: "22px" }}
+                as={"h4"}
+                color={"gray.400"}
+              >
                 Transforming Ideas <br /> into Experiences.
               </Heading>
             </Flex>
           </Flex>
           <Flex
             justifyContent={"center"}
-            alignItems={"center"}
-            w={"50%"}
+            alignItems={"end"}
+            w={{ base: "100%", md: "50%" }}
             flexDir={"column"}
+            mt={{ base: 4, md: 0 }}
           >
             <Flex gap={4} flexDir={"column"}>
-              <Box>
+            <Box>
                 <Flex
-                  borderRadius={10}
-                  py={3}
-                  gap={4}
-                  alignItems={"center"}
-                  bgColor={"gray.700"}
-                  px={4}
+                  px={2}
+                  justifyContent={{ base: "center", md: "end" }}
+                  gap={6}
                 >
-                  <Text color={"gray.300"} fontWeight={500}>
-                    support@webwhale.com
-                  </Text>
-                  <CopyToClipBoard text={"support@webwhale.com"}>
-                    <FaCopy />
-                  </CopyToClipBoard>
-                </Flex>
-              </Box>
-
-              <Box>
-                <Flex px={2} justifyContent={"end"} gap={6}>
                   <SocialButton
-                    label={"Twitter"}
-                    href={"http://www.dbe-du.org/"}
-                  >
-                    <FaTwitter size={"18px"} />
-                  </SocialButton>
-                  <SocialButton
-                    label={"Twitter"}
+                    label={"Facebook"}
                     href={"https://x.com/WebWhaleCoders"}
                   >
                     <FaFacebook size={"18px"} />
@@ -117,17 +107,49 @@ export default function Footer() {
                   </SocialButton>
                 </Flex>
               </Box>
+              <Box>
+                <Flex
+                  borderRadius={10}
+                  py={3}
+                  gap={4}
+                  alignItems={"center"}
+                  bgColor={"gray.700"}
+                  px={4}
+                >
+                  <Text color={"gray.300"} fontWeight={500}>
+                    webwhalesolution@gmail.com
+                  </Text>
+                  <CopyToClipBoard text={"webwhalesolution@gmail.com"}>
+                    <FaCopy />
+                  </CopyToClipBoard>
+                </Flex>
+              </Box>
+
+            
             </Flex>
           </Flex>
         </Flex>
-        <Divider my={2} borderBottom={"5px solid lightgray"} />
-        <Flex justifyContent={"space-between"} alignItems={"center"}>
-          <Flex gap={1}>
+      </Container>
+
+      <Divider my={2} borderBottom={"3px solid lightgray"} />
+      <Container maxW={"7xl"}>
+        {" "}
+        <Flex
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          flexDirection={{ base: "column", md: "row" }}
+          textAlign={{ base: "center", md: "left" }}
+        >
+          <Flex
+            gap={1}
+            flexWrap={"wrap"}
+            justifyContent={{ base: "center", md: "flex-start" }}
+          >
             {NavLinks.map((item, idx) => (
               <CustomNavLink data={item} key={idx} />
             ))}
           </Flex>
-          <Text fontSize={"14px"} color={"gray.400"}>
+          <Text fontSize={"14px"} color={"gray.400"} mt={{ base: 4, md: 0 }}>
             Copyright © 2024 WebWhale. All rights reserved.
           </Text>
         </Flex>

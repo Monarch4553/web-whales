@@ -11,7 +11,7 @@ export default function PickUsCard({data}) {
       overflow={"hidden"}
       minH={"350px"}
       borderRadius={20}
-      flexDir={"column"}
+      flexDir={"column"} maxW={{base:'350px',sm:'450px',md:'initial'}} mx={'auto'}
     >
       <Flex
         bgColor={"gray.600"}

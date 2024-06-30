@@ -16,7 +16,7 @@ export default function WebPortfolio() {
           title={"Our Websites"}
           heading={"Various Websites we worked on..."}
         />
-        <SimpleGrid mt={6} columns={{ base: 1, md: 2 }} gap={12}>
+        <SimpleGrid mt={6} columns={{ base: 1, xl: 2 }} gap={12}>
           {WebsitePortfolioData.map((item, idx) => (
             <WebsiteCard    key={idx}
               idx={idx}

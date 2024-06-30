@@ -1,12 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  overflow: hidden !important;
-  /* changing the background of whole document to black */
+ 
+.responsive-logo {
+  width: 160px;
 }
-html {
-  scroll-behavior: smooth;
+
+@media (max-width: 768px) {
+  .responsive-logo {
+    width: 130px;
+  }
 }

@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
-
+import "./globals.css"
 
 export const metadata = {
   title:'webWhale'

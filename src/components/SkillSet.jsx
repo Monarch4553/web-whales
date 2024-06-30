@@ -16,7 +16,7 @@ export default function SkillSet() {
           title={"Our Skillset"}
           heading={"Our extensive development skills"}
         />
-        <SimpleGrid mt={12} columns={{ base: 1, sm: 2, md: 3, lg: 4 }} gap={5}>
+        <SimpleGrid mt={12} columns={{ base: 1, sm: 2, md: 3, lg: 4 }} gap={6}>
           
           {SkillSetData.map((item, idx) => (
             <SkillCard key={idx} data={item} />

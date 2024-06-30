@@ -3,6 +3,7 @@ import ChooseUs from "@/components/ChooseUs";
 import Hero from "@/components/Hero";
 import Metrics from "@/components/Metrics";
 import Portfolio from "@/components/Portfolio";
+import Scroller from "@/components/Scroller";
 
 import SkillSet from "@/components/SkillSet";
 import Team from "@/components/Team";
@@ -27,20 +28,23 @@ export default function Home() {
     transform: "scale(1)",
     transition: "all 0.3s ease",
   };
+
   return (
     <Box bgColor={Theme.bgLightShade}>
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <SkillSet />
 
       <Portfolio />
       <WebPortfolio />
       <Team />
+      {/* <Scroller /> */}
       <Testimonials />
 
       <Metrics />
       <ChooseUs />
       <a
+        style={{ zIndex: 50 }}
         href="https://api.whatsapp.com/send?phone=918837793351"
         target="_blank"
       >

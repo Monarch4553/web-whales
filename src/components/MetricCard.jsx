@@ -1,12 +1,11 @@
 import { Divider, Flex, Heading } from "@chakra-ui/react";
  
 import Counting from "./Counting"; 
-
-import Theme from "@/theme/Theme";
+ 
 export default function MetricCard({ data }) {
   return (
-    <Flex
-      gap={4}
+    <Flex mb={{base:12,lg:0}}
+      gap={{base:2,lg:4}}
       flexDir={"column"}
       color={"white"}
       justifyContent={"center"}

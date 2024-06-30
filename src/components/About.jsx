@@ -7,7 +7,6 @@ export default function About() {
   const imageVariants = {
     visible: {
       opacity: 1,
-
       transition: { ease: "easeInOut", duration: 1, delay: 0.3 },
       y: 0,
     },
@@ -20,7 +19,6 @@ export default function About() {
   const bottomImageVariant = {
     visible: {
       opacity: 1,
-
       transition: { ease: "easeInOut", duration: 1, delay: 0.3 },
       y: 0,
     },
@@ -29,27 +27,37 @@ export default function About() {
       y: 100,
     },
   };
+
   return (
     <Box id="about-us" bgColor={Theme.bgDarkShade}>
-      <Container px={2} py={16} maxW={"6xl"}>
-        <Flex gap={16}>
-          <Flex w={"50%"}>
+      <Container px={4} py={16} maxW={"6xl"}>
+        <Flex
+          mx={"auto"}
+          flexDir={{ base: "column", md: "row" }}
+          maxW={{ base: "400px", md: "initial" }}
+          gap={{ base: 8, md: 10 }}
+        >
+          <Flex w={{ base: "100%", md: "50%" }}>
             <AnimationWrapper variants={imageVariants}>
-              <Box borderRadius={24} overflow={"hidden"} mt={-36}>
+              <Box
+                borderRadius={24}
+                overflow={"hidden"}
+                mt={{ base: 0, md: -36 }}
+              >
                 <Image
                   objectFit={"cover"}
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}
                   _hover={{ transform: "scale(1.1)" }}
                   src={"/about-image-2.png"}
-                  height={"700"}
-                  width={"500"}
+                  maxW={{ base: "full", sm: "400px", md: "full" }}
+                  height={{ base: "500px", md: "700px" }}
                   alt="About us image"
                 />
               </Box>
             </AnimationWrapper>
           </Flex>
-          <Flex flexDir={"column"} w={"50%"}>
+          <Flex flexDir={"column"} w={{ base: "100%", md: "50%" }}>
             <SectionTitle
               title={"About Us"}
               heading={
@@ -58,7 +66,7 @@ export default function About() {
             />
             <Text
               mt={4}
-              fontSize={"18px"}
+              fontSize={{ base: "16px", md: "18px" }}
               textAlign={"justify"}
               color={"gray.400"}
             >
@@ -69,15 +77,27 @@ export default function About() {
             </Text>
           </Flex>
         </Flex>
-        <Flex mt={14} gap={16}>
-          <Flex mt={24} flexDir={"column"} w={"50%"}>
+
+        {/* Lower Card */}
+        <Flex
+          mt={{ base: 32, md: 14 }}
+          mx={"auto"}
+          maxW={{ base: "400px", md: "initial" }}
+          gap={{ base: 8, md: 10 }}
+          flexDirection={{ base: "column-reverse", md: "row" }}
+        >
+          <Flex
+            mt={{ base: 8, md: 24 }}
+            flexDir={"column"}
+            w={{ base: "100%", md: "50%" }}
+          >
             <SectionTitle
               title={"About me "}
               heading={"The Technology Stack that we use."}
             />
             <Text
               mt={4}
-              fontSize={"18px"}
+              fontSize={{ base: "16px", md: "18px" }}
               textAlign={"justify"}
               color={"gray.400"}
             >
@@ -89,18 +109,23 @@ export default function About() {
               performance and security.
             </Text>
           </Flex>
-          <Flex w={"50%"}>
-            <AnimationWrapper variants={bottomImageVariant}>
-              <Box borderRadius={24} overflow={"hidden"} mb={-36}>
+          <Flex w={{ base: "100%", md: "50%" }}>
+            <AnimationWrapper variants={imageVariants}>
+              <Box
+                borderRadius={24}
+                overflow={"hidden"}
+                mt={{ base: 0, md: -36 }}
+              >
                 <Image
                   objectFit={"cover"}
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}
                   _hover={{ transform: "scale(1.1)" }}
-                  alt="About us image"
                   src={"/about-image-1.jpeg"}
-                  height={"700"}
-                  width={"500"}
+                  w={{base:"400px",md:'initial'}}
+                  maxW={{ base: "full", sm: "400px", md: "full" }}
+                  height={{ base: "500px", md: "700px" }}
+                  alt="About us image"
                 />
               </Box>
             </AnimationWrapper>

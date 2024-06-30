@@ -63,7 +63,7 @@ function TestimonialsSlideShow() {
         </Flex>
         <Button p={0}
           position={"absolute"}
-          id="prevbtn"
+          id="prevbtn" display={{base:'none',md:'block'}}
           left="2"
           top={"45%"}  color={'white'}
           _hover={{ bgColor: "transparent", color: Theme.primaryColor }}
@@ -73,7 +73,7 @@ function TestimonialsSlideShow() {
           <BsChevronLeft size={"40px"} />
         </Button>
 
-        <Button p={0}
+        <Button p={0} display={{base:'none',md:'block'}}
           position={"absolute"}
           id="nextbtn"
           right="2"

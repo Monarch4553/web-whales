@@ -14,7 +14,7 @@ export default function ChooseUs() {
           title={"Reasons to choose Us?"}
           heading={"A tip of our Iceberg."}
         />
-        <SimpleGrid pt={12} columns={4} gap={4}>
+        <SimpleGrid pt={12} columns={{base:1,md:2,lg:3,xl:4}} gap={4}>
           {ChooseUsData.map((item, idx) => (
             <PickUsCard key={idx} data={item} />
           ))}

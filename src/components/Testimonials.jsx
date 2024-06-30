@@ -6,23 +6,24 @@ import Theme from "@/theme/Theme";
 import { MdVerifiedUser } from "react-icons/md";
 export default function Testimonials() {
   return (
-    
-     <Container id="reviews" py={16} maxW={"7xl"}>
+    <Container id="reviews" py={16} maxW={"7xl"}>
       <Flex alignItems={"center"} justifyContent={"space-between"}>
         <SectionTitle
           title={"Our Testimonials"}
           heading={"What our customers say!"}
         />
-      <Flex alignItems={'center'} gap={1}>
-      <MdVerifiedUser color={Theme.secondaryColor} size={'24px'} />
-        <Text fontWeight={700} fontSize={'18px'} color={Theme.secondaryColor}>
-        
-          Reviews Verified
-        </Text>
-      </Flex>
+        <Flex
+          display={{ base: "none", md: "flex" }}
+          alignItems={"center"}
+          gap={1}
+        >
+          <MdVerifiedUser color={Theme.secondaryColor} size={"24px"} />
+          <Text fontWeight={700} fontSize={"18px"} color={Theme.secondaryColor}>
+            Reviews Verified
+          </Text>
+        </Flex>
       </Flex>
       <TestimonialsSlideShow />
     </Container>
- 
   );
 }

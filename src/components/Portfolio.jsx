@@ -12,7 +12,7 @@ export default function Portfolio() {
           title={"Our Apps"}
           heading={"Various Apps we worked on..."}
         />
-        <SimpleGrid mt={6} columns={{ base: 1, md: 2 }} gap={8}>
+        <SimpleGrid mt={6} columns={{ base: 1, xl: 2 }} gap={8}>
           {PortfolioData.map((item, idx) => (
             <PortfolioCard key={idx} data={item} />
           ))}
