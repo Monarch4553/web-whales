@@ -24,10 +24,11 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Container p={0} maxW={'7xl'}>
+    <Box zIndex={50} bg={'transparent'} backdropFilter={'blur(10px)'}  pos={'sticky'} top={0}>
+ <Container  p={0} maxW={'7xl'}>
       <Flex
-        bgColor={Theme.bgLightShade}
- 
+    
+   
         minH={"90px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -70,6 +71,8 @@ export default function WithSubnavigation() {
         <MobileNav />
       </Collapse>
     </Container >
+    </Box>
+   
   );
 }
 

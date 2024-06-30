@@ -30,8 +30,8 @@ export default function Home() {
   };
 
   return (
-    <Box bgColor={Theme.bgLightShade}>
-      {/* <Hero /> */}
+    <Box   bgColor={Theme.bgLightShade}>
+      <Hero />
       <About />
       <SkillSet />
 
@@ -48,7 +48,7 @@ export default function Home() {
         href="https://api.whatsapp.com/send?phone=918837793351"
         target="_blank"
       >
-        <Button {...buttonStyles} position={"fixed"} right={8} bottom={8}>
+        <Button zIndex={10} {...buttonStyles} position={"fixed"} right={8} bottom={8}>
           <FaWhatsapp size={"50px"} />
         </Button>
       </a>

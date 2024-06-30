@@ -114,7 +114,7 @@ export default function About() {
               <Box
                 borderRadius={24}
                 overflow={"hidden"}
-                mt={{ base: 0, md: -36 }}
+                mb={{ base: 0, md: -36 }}
               >
                 <Image
                   objectFit={"cover"}
