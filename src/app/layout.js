@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 import "./globals.css"
 import { DefaultSeo } from "next-seo";
+import Head from "next/head";
 
  
 
