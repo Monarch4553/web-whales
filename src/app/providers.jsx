@@ -5,6 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 import scrollAndFontCss from "@/static/scrollAndFontCss";
+ 
 
 const theme = extendTheme({
   fonts: {
@@ -12,9 +13,8 @@ const theme = extendTheme({
     body: `'Space Grotesk Variable', sans-serif`,
   },
 });
-
+ 
 export function Providers({ children }) {
-  
   return (
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
       <ChakraProvider theme={theme}>

@@ -1,15 +1,15 @@
+import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
-import "./globals.css"
-import { DefaultSeo } from "next-seo";
-import Head from "next/head";
+import "./globals.css";
 
- 
-
-const defaultSeoConfig = {
+export const metadata = {
   title: 'WebWhale | Mobile & Web Development | Full Stack Solutions',
+  titleTemplate: '%s | WebWhale',
+  defaultTitle: 'WebWhale | Mobile & Web Development | Full Stack Solutions',
   description: 'WebWhale specializes in delivering cutting-edge mobile and web development solutions. From responsive design to scalable backend systems, we offer full-stack development services tailored to your business needs. Partner with us to transform your ideas into robust digital products.',
+  canonical: 'https://webwhale.vercel.app/',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
@@ -26,20 +26,30 @@ const defaultSeoConfig = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
-    <>
-      <DefaultSeo {...defaultSeoConfig} />
+    <html lang='en'>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="canonical" href={metadata.canonical} />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:locale" content={metadata.openGraph.locale} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:site_name" content={metadata.openGraph.site_name} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:image:width" content={metadata.openGraph.images[0].width} />
+        <meta property="og:image:height" content={metadata.openGraph.images[0].height} />
+        <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
       </Head>
-      <Providers>
+     <body>
+     <Providers>
         <Navbar />
         {children}
         <Footer />
       </Providers>
-    </>
+     </body>
+    </html>
   );
 }
