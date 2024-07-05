@@ -3,7 +3,6 @@ import ChooseUs from "@/components/ChooseUs";
 import Hero from "@/components/Hero";
 import Metrics from "@/components/Metrics";
 import Portfolio from "@/components/Portfolio";
-import Scroller from "@/components/Scroller";
 
 import SkillSet from "@/components/SkillSet";
 import Team from "@/components/Team";
@@ -30,15 +29,12 @@ export default function Home() {
   };
 
   return (
-    <Box   bgColor={Theme.bgLightShade}>
+    <Box bgColor={Theme.bgLightShade}>
       <Hero />
       <About />
       <SkillSet />
 
-      <Portfolio />
-      <WebPortfolio />
       <Team />
-      {/* <Scroller /> */}
       <Testimonials />
 
       <Metrics />
@@ -48,7 +44,13 @@ export default function Home() {
         href="https://api.whatsapp.com/send?phone=918837793351"
         target="_blank"
       >
-        <Button zIndex={10} {...buttonStyles} position={"fixed"} right={8} bottom={8}>
+        <Button
+          zIndex={10}
+          {...buttonStyles}
+          position={"fixed"}
+          right={8}
+          bottom={8}
+        >
           <FaWhatsapp size={"50px"} />
         </Button>
       </a>

@@ -49,7 +49,7 @@ export default function About() {
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}
                   _hover={{ transform: "scale(1.1)" }}
-                  src={"/about-image-2.png"}
+                  src={"/about-image-2.webp"}
                   maxW={{ base: "full", sm: "400px", md: "full" }}
                   height={{ base: "500px", md: "700px" }}
                   alt="About us image"
@@ -121,7 +121,7 @@ export default function About() {
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}
                   _hover={{ transform: "scale(1.1)" }}
-                  src={"/about-image-1.jpeg"}
+                  src={"/about-image-1.webp"}
                   w={{base:"400px",md:'initial'}}
                   maxW={{ base: "full", sm: "400px", md: "full" }}
                   height={{ base: "500px", md: "700px" }}

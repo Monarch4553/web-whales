@@ -6,7 +6,7 @@ import PortfolioCard from "./PortfolioCard";
 import PortfolioData from "@/static/PortfolioData"; 
 export default function Portfolio() {
   return (
-    <Box id="portfolio" bgColor={Theme.bgDarkShade} minH={"85vh"}>
+    <Box id="portfolio"   minH={"85vh"}>
       <Container py={16} maxW={"7xl"}>
         <SectionTitle
           title={"Our Apps"}

@@ -14,13 +14,13 @@ const WebsitePortfolioData = [
     {
         heading:'TEDx Event',
         subheading:'Tedx organized event in Delhi University.',
-        image:'/tedx.png',
+        image:'/tedx.webp',
         tags:['Web Development',"ReactJs"]
     },
     {
         heading:'Alumni Website',
         subheading:'Alum portal for college in Delhi University.',
-        image:'/alumni-dbe.png',
+        image:'/alumni-dbe.webp',
         tags:['Full Stack',"MERN"]
     },
      

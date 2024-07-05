@@ -2,27 +2,27 @@ const TeamData =  [
     {
       name: "Monarch Gupta",
       designations: ["Website Developer",   "Full Stack Developer"],
-      image:'/monarch.png'
+      image:'/monarch.webp'
     },
     {
       name: "Shitiz Gupta",
       designations: ["App Developer", "Mobile Architect"],
-      image:'/shitiz.png'
+      image:'/shitiz.webp'
     },
     {
       name: "Shubhi Agartala",
       designations: ["Senior Manager","Project Coordinator"],
-      image:'/luna.png'
+      image:'/luna.webp'
     },
     {
       name: "Maanu Kushwaha",
       designations: ["Head of Marketing", "Brand Manager"],
-      image:'/mannu.png'
+      image:'/mannu.webp'
     },
     {
       name: "Akshay Kumar",
       designations: ["Operations Lead", "Social Media Manager"],
-      image:'/ranger.png'
+      image:'/ranger.webp'
     },
   ];
 export default TeamData;
