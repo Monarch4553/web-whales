@@ -10,9 +10,9 @@ const TeamData =  [
       image:'/shitiz.webp'
     },
     {
-      name: "Shubhi Agartala",
+      name: "Esha Sharma",
       designations: ["Senior Manager","Project Coordinator"],
-      image:'/luna.webp'
+      image:'/girl.jpeg'
     },
     {
       name: "Maanu Kushwaha",
