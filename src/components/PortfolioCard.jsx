@@ -1,6 +1,5 @@
 import Theme from "@/theme/Theme";
 import { Flex, Heading, Text } from "@chakra-ui/react";
-import React from "react";
 
 export default function PortfolioCard({ data }) {
   return (
@@ -23,7 +22,7 @@ export default function PortfolioCard({ data }) {
         flexDir={"column"}
         mb={{ base: 4, md: 0 }}
       >
-        <video
+        <video 
           style={{
             borderRadius: "24px",
             width: "100%",
@@ -31,7 +30,7 @@ export default function PortfolioCard({ data }) {
             maxHeight: "500px",
             objectFit: "contain",
           }}
-          preload=""
+          preload="none"
           muted
           autoPlay
           loop

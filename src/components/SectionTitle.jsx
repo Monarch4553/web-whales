@@ -1,6 +1,5 @@
 import Theme from "@/theme/Theme";
 import { Flex, Heading } from "@chakra-ui/react";
-import React from "react";
 
 export default function SectionTitle({ title, heading }) {
   return (

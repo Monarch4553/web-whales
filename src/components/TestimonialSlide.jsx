@@ -1,6 +1,5 @@
-import React from "react";
-import { Box, SimpleGrid, Flex, Text, Heading, Button,Image } from "@chakra-ui/react";
-import Theme from "@/theme/Theme";
+import { Flex, Text, Heading,Image } from "@chakra-ui/react";
+
  
 
 function TestimonialSlide({ data }) {

@@ -1,5 +1,4 @@
 import { Box, Container, Flex } from "@chakra-ui/react";
-import React from "react";
 import SectionTitle from "./SectionTitle";
 import TeamCard from "./TeamCard";
 import TeamData from "@/static/TeamData";

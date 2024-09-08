@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import { Flex, Heading, Image } from "@chakra-ui/react";
 
 import WebTag from "./WebTag";
 
@@ -46,7 +46,7 @@ export default function WebsiteCard({
         </Heading>
       </Flex>
 
-      <Image
+      <Image loading="lazy"
         transition={"transform 1s cubic-bezier(0.16, 1, 0.3, 1)"}
         transform={hoveredIndex === idx ? "scale(1.1)  " : "scale(1) "}
         w={"100%"}

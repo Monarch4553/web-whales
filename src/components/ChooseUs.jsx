@@ -1,5 +1,5 @@
-import Theme from "@/theme/Theme";
-import { Box, Container, SimpleGrid } from "@chakra-ui/react";
+
+import {  Container, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import PickUsCard from "./PickUsCard";

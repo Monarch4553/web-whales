@@ -1,5 +1,4 @@
-import { Box, Container, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import { Container, Flex, Text } from "@chakra-ui/react";
 import SectionTitle from "./SectionTitle";
 import TestimonialsSlideShow from "./TestimonialsSlideShow";
 import Theme from "@/theme/Theme";

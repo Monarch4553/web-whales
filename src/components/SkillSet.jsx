@@ -1,6 +1,5 @@
 import Theme from "@/theme/Theme";
-import { Box, Container, SimpleGrid, Thead } from "@chakra-ui/react";
-import React from "react";
+import { Box, Container, SimpleGrid } from "@chakra-ui/react";
 import SectionTitle from "./SectionTitle";
 import SkillCard from "./SkillCard";
 import SkillSetData from "@/static/SkillSetData";

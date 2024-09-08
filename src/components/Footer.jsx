@@ -9,12 +9,12 @@ import {
   Button,
   VisuallyHidden,Image
 } from "@chakra-ui/react";
-import React from "react";
+
 import CustomNavLink from "./CustomNavLink";
 import NavLinks from "@/static/NavLinks";
  
 import CopyToClipBoard from "./CopyToClipBoard";
-import { FaCopy, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaCopy, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const SocialButton = ({ children, label, href }) => {
   return (

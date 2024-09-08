@@ -1,5 +1,4 @@
 import { Box, Container, SimpleGrid } from "@chakra-ui/react";
-import React from "react";
 import MetricCard from "./MetricCard";
 import MetricsData from "@/static/MetricsData";
 import Theme from "@/theme/Theme";
