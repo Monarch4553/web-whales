@@ -2,13 +2,13 @@ const WebsitePortfolioData = [
     {
         heading:'FintechX',
         subheading:'Banking Website Optimization for FintechX',
-        image:'/fintech.png',
+        image:'/fintech.webp',
         tags:['Web Development',"ReactJs"]
     },
     {
         heading:'Dark',
         subheading:'Trading Website Development for FintechX',
-        image:'/darkx.png',
+        image:'/darkx.webp',
         tags:['Web Development',"ReactJs"]
     },
     {

@@ -57,7 +57,7 @@ export default function Footer() {
           <Flex alignItems={"center"} gap={6} w={{ base: "100%", md: "50%" }}>
             <Image
               style={{ borderRadius: "50%" }}
-              
+              loading="lazy"
               alt="Company Logo in footer"
               width={{base:'100px'}}
               src={"/trademark.webp"}

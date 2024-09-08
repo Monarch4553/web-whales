@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import Loader from '@/components/Loader';
 
 export const metadata = {
   title: 'WebWhale | Mobile & Web Development | Full Stack Solutions',
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
       </Head>
      <body>
      <Providers>
+      <Loader/>
         <Navbar />
         {children}
         <Footer />

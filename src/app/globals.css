@@ -8,7 +8,9 @@
   padding: 0;
 }
 
-
+.preloader-image-wrapper{
+  width: 45%;
+}
 .responsive-logo {
   width: 160px;
 }
@@ -16,6 +18,9 @@
 @media (max-width: 768px) {
   .responsive-logo {
     width: 130px;
+  }
+  .preloader-image-wrapper{
+    width: 300px;
   }
 } 
  
