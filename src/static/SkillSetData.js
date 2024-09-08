@@ -1,4 +1,4 @@
-import { FaCreditCard,   FaMobileAlt, FaNode, FaReact, FaShoppingCart } from "react-icons/fa";
+import { FaCreditCard, FaNode, FaReact, FaShoppingCart } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiMongodb, SiChakraui } from "react-icons/si";
@@ -69,7 +69,7 @@ const SkillSetData = [
   {
     name: "Expo",
     description: "Framework and platform for universal React applications.",
-    icon:<Image w={'50px'} src="/expo.svg"/>
+    icon:<Image alt="Expo Icon" w={'50px'} src="/expo.svg"/>
   },
 ]
 

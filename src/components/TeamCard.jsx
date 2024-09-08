@@ -8,7 +8,7 @@ export default function TeamCard({ data }) {
       color={"white"}
       flexDir={"column"}
     >
-      <Image 
+      <Image  loading="lazy"
         transition={"transform 0.4s cubic-bezier(0, 0.55, 0.45, 1)"}
         transform={"scale(1)"}
         _hover={{ transform: "scale(1.1)" }}

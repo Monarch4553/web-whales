@@ -1,7 +1,7 @@
  
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
  
-import React from "react";
+ 
 
 export default function PickUsCard({data}) {
   return (
@@ -19,7 +19,7 @@ export default function PickUsCard({data}) {
         alignItems={"center"}
         height={"50%"}
       >
-        <Image height={120}   alt="3d icon" src={data?.icon} />
+        <Image loading="lazy" height={120}   alt="3d icon" src={data?.icon} />
       </Flex>
       <Flex
         gap={2}

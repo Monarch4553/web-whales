@@ -33,8 +33,9 @@ export default function Home() {
       <Hero />
       <About />
       <SkillSet />
-
+      <Portfolio />
       <Team />
+      <WebPortfolio/>
       <Testimonials />
 
       <Metrics />
@@ -42,14 +43,14 @@ export default function Home() {
       <a
         style={{ zIndex: 50 }}
         href="https://api.whatsapp.com/send?phone=918837793351"
-        target="_blank"
+        target="_blank"   aria-label="Send a message on WhatsApp"
       >
-        <Button
+        <Button 
           zIndex={10}
           {...buttonStyles}
           position={"fixed"}
           right={8}
-          bottom={8}
+          bottom={8}  aria-label="Chat with us on WhatsApp"
         >
           <FaWhatsapp size={"50px"} />
         </Button>

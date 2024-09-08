@@ -13,7 +13,7 @@ function TestimonialSlide({ data }) {
   flexDirection={{ base: 'column', md: 'row' }} 
   justifyContent={"space-between"}
 >
-  <Image
+  <Image loading="lazy"
     style={{ borderRadius: "18px" ,objectFit:'cover'}}
     width={{ base: "100%", md: "320px" }}
     height={{ base: "auto", md: "320px" }}

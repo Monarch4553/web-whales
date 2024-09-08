@@ -1,7 +1,6 @@
 import Theme from "@/theme/Theme";
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box,  Flex, Heading, Text } from "@chakra-ui/react";
 
-import React from "react";
 import AnimationWrapper from "./AnimationWrapper";
 
 export default function SkillCard({ data }) {

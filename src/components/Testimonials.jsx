@@ -6,7 +6,7 @@ import Theme from "@/theme/Theme";
 import { MdVerifiedUser } from "react-icons/md";
 export default function Testimonials() {
   return (
-    <Container id="reviews" py={16} maxW={"7xl"}>
+    <Container borderTop={`1px solid gray`} id="reviews" py={16} maxW={"7xl"}>
       <Flex alignItems={"center"} justifyContent={"space-between"}>
         <SectionTitle
           title={"Our Testimonials"}

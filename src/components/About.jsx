@@ -15,19 +15,7 @@ export default function About() {
       y: 100,
     },
   };
-
-  const bottomImageVariant = {
-    visible: {
-      opacity: 1,
-      transition: { ease: "easeInOut", duration: 1, delay: 0.3 },
-      y: 0,
-    },
-    hidden: {
-      opacity: 0,
-      y: 100,
-    },
-  };
-
+ 
   return (
     <Box id="about-us" bgColor={Theme.bgDarkShade}>
       <Container px={4} py={16} maxW={"6xl"}>
@@ -44,7 +32,7 @@ export default function About() {
                 overflow={"hidden"}
                 mt={{ base: 0, md: -36 }}
               >
-                <Image
+                <Image loading="lazy"
                   objectFit={"cover"}
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}
@@ -116,7 +104,7 @@ export default function About() {
                 overflow={"hidden"}
                 mb={{ base: 0, md: -36 }}
               >
-                <Image
+                <Image loading="lazy"
                   objectFit={"cover"}
                   transition={"all 0.4s ease"}
                   transform={"scale(1)"}

@@ -12,7 +12,7 @@ const TeamData =  [
     {
       name: "Esha Sharma",
       designations: ["Senior Manager","Project Coordinator"],
-      image:'/girl.jpeg'
+      image:'/girl.webp'
     },
     {
       name: "Maanu Kushwaha",

@@ -1,10 +1,10 @@
 "use client";
 import Theme from "@/theme/Theme";
-import { Button, Tooltip, useClipboard } from "@chakra-ui/react";
+import { Button, useClipboard } from "@chakra-ui/react";
 import { useState } from "react";
 
-import { FaCheck} from "react-icons/fa";
-export default function CopyToClipBoard({ text,children }) {
+import { FaCheck } from "react-icons/fa";
+export default function CopyToClipBoard({ text, children }) {
   const { onCopy } = useClipboard(text);
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
@@ -15,15 +15,15 @@ export default function CopyToClipBoard({ text,children }) {
     }, 3000); // Change label back to "Copy" after 3 seconds
   };
   return (
-    <Button  
+    <Button
       onClick={handleCopy}
-      _hover={{ bgColor: copied ? 'green.400' : Theme.secondaryColor }}
-      bgColor={copied ? 'green.400' : Theme.primaryColor}
+      _hover={{ bgColor: copied ? "green.400" : Theme.secondaryColor }}
+      bgColor={copied ? "green.400" : Theme.primaryColor}
       size={"sm"}
-       px={'10px'} color={'white'}
-      
+      px={"10px"}
+      color={"white"}   aria-label={copied ? "Copied!" : "Copy to clipboard"}
     >
-      {copied ? <FaCheck/> : children}
+      {copied ? <FaCheck /> : children}
     </Button>
   );
 }
