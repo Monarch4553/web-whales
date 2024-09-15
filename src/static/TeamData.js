@@ -15,9 +15,9 @@ const TeamData =  [
       image:'/girl.webp'
     },
     {
-      name: "Maanu Kushwaha",
+      name: "Mayank Singh",
       designations: ["Head of Marketing", "Brand Manager"],
-      image:'/mannu.webp'
+      image:'/mayank.webp'
     },
     {
       name: "Akshay Kumar",
